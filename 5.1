@@ -1,0 +1,17 @@
+from datetime import datetime
+
+a_date = "Wednesday, October 2, 2002"
+b_date = "Friday, 11.10.13"
+c_date = "Thursday, 18 August 1977"
+
+a_format = "%A, %B %d, %Y"
+b_format = "%A, %d.%m.%y"
+c_format = "%A, %d %B %Y"
+
+a_datetime = datetime.strptime(a_date, a_format)
+b_datetime = datetime.strptime(b_date, b_format)
+c_datetime = datetime.strptime(c_date, c_format)
+
+print(a_datetime)
+print(b_datetime)
+print(c_datetime)
